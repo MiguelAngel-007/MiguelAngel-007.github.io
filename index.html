@@ -1,23 +1,65 @@
----
-layout: layouts/full.njk
-title: Inicio
----
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Livvic:ital,wght@0,400;1,300&family=Tenali+Ramakrishna&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  </head>
+  <body>
 
+<div class="header">
+
+  <div class="container">
+
+    <a href="/" class="header-logo">
+      <img src="/assets/images/logo.svg" class="header-logo-normal" alt="MZ">
+      <img src="/assets/images/logo-inverso.svg" class="header-logo-inverso" alt="MZ">
+    </a>
+
+    <button class="hamburger hamburger--collapse header-nav-icon" type="button" aria-label="Menu" aria-controls="navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    
+    <div class="nav" id="navigation">
+        <a href="/quien-soy/"
+          class="text-headline"
+        >
+          quién soy
+        </a>
+        <a href="/contacto/"
+          class="text-headline"
+        >
+          contacto
+        </a>
+    </div>
+
+  </div>
+
+</div>
+
+  
+
+
+<div>
+  
 <div class="starwars-demo">
   <img src="/assets/images/miguel.svg" alt="Star" class="star">
   <img src="/assets/images/angel.svg" alt="Wars" class="wars">
   <h2 class="byline" id="byline">IMPOSSIBLE IS NOTHING</h2>
 </div>
 <div class="home-slide">
-  {# <img src="/assets/images/4CND.gif" id="portada" alt=""> #}
-  {# <div class="bg-6">
-    <div class="glitch" data-text="IMPOSSIBLE IS NOTHING...">IMPOSSIBLE IS NOTHING...</div>
-  </div> #}
-  {# <div>
-     <h1 class="font-2 home-title">Miguel Angel es….
-      <span>&#160;</span>
-    </h1>
-  </div> #}
+  
+  
+  
   <br><br><br>
   <div class="font-2 home-subheader" id="textAnim">
     <svg width="800" height="400" viewbox="0 0 600 500">
@@ -217,3 +259,29 @@ title: Inicio
   </section>
   <a href="" class="font-2 home-subheader home-subheader-alt">habilidades</a>
 </div>
+</div>
+
+  <div class="footer">
+    <div class="container grid">
+      <div class="col-12">
+        &copy; Miguel Angel
+        <a href="#">Aviso legal</a>
+        <a href="/contacto/">Contacto</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie_svg.min.js"></script>  
+  <script src="/assets/scripts/loti.js"></script>
+
+  <script src="/assets/scripts/animaciones.js"></script>
+  
+  <script src="/assets/scripts/nav.js"></script>
+  <script src="/assets/scripts/basicScroll.min.js"></script>
+  <script src="/assets/scripts/basicScrollStart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </body>
+</html>
+
