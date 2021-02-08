@@ -1,0 +1,66 @@
+h1 {
+  float: left;
+  position: relative;
+}
+
+h1 span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  border-left: 2px solid #9fa5bf;
+  opacity: 100%;
+  animation: maquina 5s infinite alternate steps(23);
+}
+
+.slide {
+  fill: var(--primary-1);
+  color: var(--primary-1);
+  opacity: 0;
+  font-family: var(--font-2);
+  mix-blend-mode: hard-light;
+  transition: 0.3s all;
+}
+
+.slide1 {
+  animation: aparece 2s 2s;
+}
+
+.slide2 {
+  animation: aparece 2s 4s;
+}
+
+.slide3 {
+  animation: aparece 2s 6s;
+}
+
+.slide-final {
+  animation: final 2s 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparece {
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes final {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes maquina {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
