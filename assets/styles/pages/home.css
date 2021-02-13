@@ -30,10 +30,12 @@
   right: 50px;
   font-size: var(--text-jumbo);
   transition: 0.3s all;
+  display: block;
 }
 
 .home-subheader:hover {
   opacity: 0.8;
+  color: var(--link-hover);
 }
 
 .home-subheader-alt {
@@ -47,13 +49,7 @@
     font-size: var(--text-display);
   }
 }
-#layout {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  padding: 5px;
-  position: absolute;
-}
+
 
 /* #textAnim{
   border: 2px solid white;
@@ -66,57 +62,56 @@ li a{
 }
 
 li a :hover{
-  background: var(--primary-9);
+  background: var(--primary-1);
 }
 li a:link{
   text-decoration:none;
 }
 
-/*Seecion de Experiencia TARJETAS*/
-#cards {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary-9);
-}
 
-.card {
-  width: 350px;
-  height: 500px;
-  border: 1px solid #ccc;
+
+/*soluciones test*/
+#imgSol {
+  opacity: 0.8;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position:absolute;
+}
+.tarjeta {
+  width: 100%;
+  height:auto;
+  border: 2px solid #ccc;
   box-shadow: 2px 2px 3px #ddd;
   margin: 15px;
-  float: left;
-  background: var(--primary-1);
+  margin-top: 5px;
+  padding: 10px;
+  background: var(--primary-8);
   opacity: 0.9;  
-  overflow: hidden;
+  overflow: hidden;  
 }
-
-.card .titulo {
+.tarjeta .titulo {
   width: 100%;
-  height: 50px;
   margin: 10px;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
+  color:rgb(255, 255, 255);
 }
-
-.card .descripcion {
+.tarjeta .descripcion {
+  width: 100%;
+  height: auto;
   font-size: 15px;
   text-align: justify;
   margin: 10px;
   padding: 20px;
-  text-shadow: brown;
-  color:black;
+  color:rgb(255, 255, 255);
 }
-
-.card:hover{
+.tarjeta:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   filter: grayscale(80%);
 }
 
-
+/**/

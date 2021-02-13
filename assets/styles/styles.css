@@ -33,6 +33,6 @@
 
 /* Animacion */
 @import url("animacion/animateYektik.css");
-@import url("animacion/textoanimado.css");
 @import url("animacion/efectoStarWars.css");
-@import url("animacion/pestañas.css");
+@import url("animacion/slide.css");
+@import url("animacion/flipCard.css");

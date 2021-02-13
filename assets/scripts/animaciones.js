@@ -19,6 +19,3 @@ for(i=0;i<bylineArr.length;i++){                  // Loop for every letter
 }
 
 
-/*Modal Funcion*/
-
-/*Modal Fin*/

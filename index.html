@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Livvic:ital,wght@0,400;1,300&family=Tenali+Ramakrishna&family=Yusei+Magic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   </head>
   <body>
 
@@ -86,202 +90,329 @@
 </div>
 
 <div class="home-slide">
-
-  <img src="/assets/images/teclado.jpg" alt="">
-  <section id="cards">
-    <div class="card">
-      <h2 class="titulo"> FGR - Agencia de Investigacion Criminal</h2>
-      <ul class="descripcion">
-        <li>Desarrollo de Sistemas.</li>
-        <li>Participación en el proyecto colaboración RIC y el desarrollo de la aplicación móvil en sistema operativo Android para la red de inteligencia criminal.</li>
-        <li>Participación en el Proyecto “Registro de Aspirantes” para Oficialia Mayor.</li>
-        <li>Apoyo en el proyecto SUAIC(Prometheus) modulo de denuncias, detenidos, CGSP, PFM.</li>
-        <li>Manejo de Solr y Power BI. • Participación en el desarrollo del sistema SINIED.</li>
-      </ul>
+  <img src="/assets/images/teclado.jpg" id="imgSol">
+  <section class="container grid">
+    <div class="tarjeta col-12">
+      <div data-aos="fade-up-right">
+        <h2 class="titulo"> FGR - Agencia de Investigacion Criminal</h2>
+        <ul class="descripcion">        
+          <li>Análisis, desarrollo y mantenimiento de aplicaciones Web ASP.Net MVC con lenguaje C#.</li>
+          <li>Proyecto RIC(Red de Inteligencia Criminal) aplicación móvil en sistema operativo Android con lenguaje Java.</li>
+          <li>Proyecto “Registro de Aspirantes” para Oficialia Mayor.</li>
+          <li>Proyecto SUAIC(Prometheus) modulo de denuncias, detenidos, CGSP, PFM.</li>
+          <li>Generacion de informes con Power BI.</li>
+          <li>Construcción de clases controller con metodos ActionResult GET y POST.</li>
+          <li>Construcción de métodos de negocio y queries Linq To Entities</li>
+          <li>Construcción de vistas HTML con javascript, jquery, Bootstrap y Razor.</li>
+          <li>Mapeo de tablas y vistas de base de datos con Entity Framework 6.0.</li>
+          <li>Consumo de API REST como cliente con C#</li>
+          <li>Creación de métodos de negocio y queries Linq to Entities.</li>
+          <li>Control de versiones con Team Foundation Server.</li>
+          <li>Indexamiento de tablas de base de datos con Solr.</li>
+        </ul>
+      </div>
     </div>
-    <div class="card">
-      <h2 class="titulo"> PGR - Coordinacion General de Servicios Periciales </h2>
-      <ul class="descripcion">
-        <li>Creación de la intranet página web y servicio de ftp para la CGSP.</li>
-        <li>Migración de servicios y equipos de la plataforma DELL a HP, respaldo de información, borrado seguro.</li>
-        <li>Proyecto de seguridad DLP (Data Loss Prevention).</li>
-        <li>Configuración, administración e instalación de lectores biométricos para registro de entradas y salidas.</li>
-        <li>Administración del laboratorio de Informática y Telecomunicaciones en materia forense.</li>
-        <li>Desarrollo del sistema nacional para identificación y registro de moneda falsa.</li>
-        <li>Desarrollo del sistema de gestión documental para la CGSP.</li>
-      </ul>
+    <div class="tarjeta col-12">
+      <div data-aos="fade-up-left">
+        <h2 class="titulo"> PGR - Coordinacion General de Servicios Periciales </h2>
+        <ul class="descripcion">
+          <li>Creación de la intranet, página web y servicio de ftp para la CGSP con HTML, CSS, JavaScript, PHP.</li>
+          <li>Migración de servicios y equipos de la plataforma DELL a HP, respaldo de información, borrado seguro.</li>
+          <li>Gestion e implementacion de Proyecto de seguridad HP DLP (Data Loss Prevention).</li>
+          <li>Configuración, administración e instalación de lectores biométricos para registro de entradas y salidas.</li>
+          <li>Administración del laboratorio de Informática y Telecomunicaciones en materia forense.</li>
+          <li>Desarrollo del sistema nacional para identificación y registro de moneda falsa.</li>
+          <li>Desarrollo del sistema de gestión documental para la CGSP.</li>
+        </ul>
+      </div>
     </div>
-    <div class="card">
-      <h2 class="titulo"> Registro Nacional de Población</h2>
-      <ul class="descripcion">
-        <li>Proyecto cédula de identificación personal a menores de edad.</li>
-        <li>Registro biométrico a menores de edad.</li>
-        <li>Platicas a padres de familia, maestros y directivos de escuelas.</li>
-        <li>Gestión de un equipo de técnicos biométricos para la toma de datos.</li>
-      </ul>
+    <div class="tarjeta col-12">
+      <div  data-aos="fade-up" >
+        <h2 class="titulo"> Registro Nacional de Población</h2>
+        <ul class="descripcion">
+          <li>Proyecto cédula de identificación personal a menores de edad.</li>
+          <li>Registro biométrico a menores de edad.</li>
+          <li>Platicas a padres de familia, maestros y directivos de escuelas.</li>
+          <li>Gestión de un equipo de técnicos biométricos para la toma de datos.</li>
+        </ul>
+      </div>
     </div>
   </section>
-  <a href="" class="font-2 home-subheader">Experiencia</a>
+  <br><br>
+  <a class="font-2 home-subheader">Experiencia</a>
 </div>
 
 <div class="home-slide">
-  <img src="/assets/images/blanco.jpg" alt="">
-  <section id="layout">
-    <div id="container">
-      <!--Pestaña 1 activa por defecto-->
-      <input id="tab-1" type="radio" name="tab-group" checked="checked"/>
-      <label for="tab-1">Desarrollo</label>
-      <!--Pestaña 2 inactiva por defecto-->
-      <input id="tab-2" type="radio" name="tab-group"/>
-      <label for="tab-2">Diseño & Animacion</label>
-      <!--Pestaña 3 inactiva por defecto-->
-      <input id="tab-3" type="radio" name="tab-group"/>
-      <label for="tab-3">Forense</label>
-      <!--Pestaña 3 inactiva por defecto-->
-      <input id="tab-4" type="radio" name="tab-group"/>
-      <label for="tab-4">Desarrollo personal</label>
-      <!--Contenido a mostrar/ocultar-->
-      <div id="content">
-        <!--Contenido de la Pestaña 1-->
-        <div id="content-1">
-          <ul>
-            <li>
-              <a href="/assets/images/diplomas/diseñoweb.png" target="_blank">Curso en línea<b> “Diseño y desarrollo Web”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/git.png" target="_blank">Curso en línea<b> “Curso profesional de GIT y GITHUB”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/javaspring.png" target="_blank">Curso en línea<b> “Java Spring”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/css.png" target="_blank">Curso en línea<b> “Master en CSS Responsive, SASS, Flexbox, Grid y Bootstrap”</b>.</a>
-            </li>
-            <li>
-              <a href="" target="_blank">Curso en línea<b> “Master de desarrollo Android con java y kotlin”</b>.</a>
-            </li>
-            <li>
-              <a href="" target="_blank">Curso en línea<b> “ASP .Net Core con Angular”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/java.png" target="_blank">Curso<b> “Java básico”</b> impartido por el Centro de Investigación en Computación del Instituto Politécnico Nacional.</a>
-            </li>
-            <li>
-              <a href="" target="_blank">Curso de<b> “Redes Aplicadas a la Informática”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/diseñouiux.png" target="_blank">Curso en línea<b> “Fundamentos de Diseño de Interfaces UI y UX”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/prototiposmoviles.png" target="_blank">Curso en línea<b> “Diseño de prototipos Móviles”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/desingthinking.png" target="_blank">Curso en línea<b> “Desing Thinking”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/arquitecturainformacion.png" target="_blank">Curso en línea<b> “Arquitectura de la información con Usaria”</b>.</a>
-            </li>
-          </ul>
-        </div>
-        <!--Contenido de la Pestaña 2-->
-        <div id="content-2">
-          <ul>
-            <li>
-              <a href="/assets/images/diplomas/ilustrator.png" target="_blank">Curso en línea<b> “Illustrator”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/photoshop.png" target="_blank">Curso en línea<b> “Photoshop”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/animacionExpress.png" target="_blank">Curso en línea<b> “Animación exprés para redes sociales con After Effects”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/cinema4d.png" target="_blank">Curso en línea<b> “Introducción al 3D con Cinema 4D”<b/>.</a>
-              </li>
-              <li>
-                <a href="/assets/images/diplomas/fundamentosdediseño.png" target="_blank">Curso en línea<b> “Fundamentos del Diseño”</b>.</a>
-              </li>
-              <li>
-                <a href="/assets/images/diplomas/sketch.png" target="_blank">Curso en línea<b> “sketch”</b>.</a>
-              </li>
-            </ul>
+  <img src="/assets/images/4CND.gif" id="imgSol">
+  <!---->
+  <section class="container grid">
+    <div class="col-3">
+      <div class="card flip-card" data-aos="fade-right">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <!-- frente de la tarjeta -->
+            <img src="/assets/images/aplicacion-movil.png"><br>
+            <h1 class="titulo">Calculadora</h1>
           </div>
-          <!--Contenido de la Pestaña 3-->
-          <div id="content-3">
-            <ul>
-              <li>
-                <a href="/assets/images/diplomas/cibercriminalidad.png" target="_blank">Curso en línea<b> “Cibercriminalidad e Informática Forense”</b> impartido por el Instituto Nacional de Ciencias Penales.</a>
-              </li>
-              <li>
-                <a href="" target="_blank">Curso en línea<b> “Curso Básico de Ciberseguridad”</b> Impartido por la Policía Federal.</a>
-              </li>
-              <li>
-                <a href="/assets/images/diplomas/congresocibercrimen.png" target="_blank">Congreso Internacional de Cibercriminalidad “Tratamiento de Evidencia Digital”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/protecciondedatos.png" target="_blank">Curso en línea<b> “Ley General de Protección de Datos Personales en Posesión de Sujetos obligados”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/transparencia.png" target="_blank">Curso en línea<b> “Ley de General de Transparencia y Acceso a la Información Pública”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/nuevoSistemaPenal.png" target="_blank">Curso en línea<b> “Inducción al nuevo Sistema de Justicia Penal en México”</b>.</a>
-            </li>
-            <li>
-              <a href="" target="_blank">Curso en línea<b> “Identificación de Moneda Falsa en México”</b>.</a>
-            </li>
-            <li>
-              <a href="" target="_blank">Curso en línea<b> “Breve Historia de la procuración de justicia en México”</b>.</a>
-            </li>
-          </ul>
+          <div class="flip-card-back">
+            <!-- reverso de la tarjeta -->
+            <div class="row no-gutters">
+              <div class="text">
+                <p>Proyecto Android Kotlin</p>
+                <a href="https://github.com/MiguelAngel-007/CalculadoraKotlin" target="_blank"><img src="/assets/images/calculadora.png"></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="content-4">
-          <ul>
-            <li>
-              <a href="/assets/images/diplomas/negocioOnline.png" target="_blank">Curso en línea<b> “Negocio Online”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/comunicacionacertiva.png" target="_blank">Curso en línea<b> “Comunicación asertiva”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/inteligenciaemocional.png" target="_blank">Curso en línea<b> “Inteligencia emocional”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/aprenderenlinea.png" target="_blank">Curso en linea<b> “Estrategias para el aprendizaje en linea”</b>.</a>
-            </li>
-            <li>
-              <a href="/assets/images/diplomas/sep.png" target="_blank">Ponente en el Segundo Encuentro entre docentes<b> “Intercambio de estrategias innovadoras de la educación a distancia”</b>.</a>
-            </li>
-          </ul>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card flip-card" data-aos="fade-down">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <!-- frente de la tarjeta -->
+            <img src="/assets/images/www.png"><br>
+            <h1 class="titulo">Pagina web</h1>
+          </div>
+          <div class="flip-card-back">
+            <!-- reverso de la tarjeta -->
+            <div class="row no-gutters">
+              <div class="text">
+                <a href="http://www.coinsis.com.mx/" target="_blank"><p>Pagina web para empresa COINSIS</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card flip-card" data-aos="fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <!-- frente de la tarjeta -->
+            <img src="/assets/images/campana-digital.png" alt="" ><br>
+            <h1 class="titulo">Recomiendame una pelicula</h1>
+          </div>
+          <div class="flip-card-back">
+            <!-- reverso de la tarjeta -->
+            <div class="text">
+              <div>
+                <p>
+                  En Progreso...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card flip-card" data-aos="fade-down-left">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <!-- frente de la tarjeta -->
+            <img src="/assets/images/blog.png" alt="" ><br>
+            <h1 class="titulo">Blog</h1>
+          </div>
+          <div class="flip-card-back">
+            <!-- reverso de la tarjeta -->
+              <div class="text">
+                <p>
+                  En progreso...
+                </p>
+              </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <a href="" class="font-2 home-subheader home-subheader-alt">habilidades</a>
-</div>
+  <!---->
+  <a class="font-2 home-subheader">Proyectos</a>
 </div>
 
-  <div class="footer">
-    <div class="container grid">
-      <div class="col-12">
-        &copy; Miguel Angel
-        <a href="#">Aviso legal</a>
-        <a href="/contacto/">Contacto</a>
+<div class="home-slide">
+  <img src="/assets/images/blanco.jpg" alt="" id="imgSol">
+  <div class="grid">
+    <div class="col-12">
+      <!-- Swiper -->
+      <div data-aos="fade-up"  class="swiper-container">
+        <div class="parallax-bg" style="background-image:url(./assets/images/blanco.jpg)" data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
+          <!-- Desarrollo -->
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Desarrollo</div>
+            <div class="subtitle" data-swiper-parallax="-200"></div>
+            <div class="text" data-swiper-parallax="-100">
+              <ul>
+                <li>
+                  <a href="/assets/images/diplomas/diseñoweb.png" target="_blank">Curso en línea<b> “Diseño y desarrollo Web”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/git.png" target="_blank">Curso en línea<b> “Curso profesional de GIT y GITHUB”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/javaspring.png" target="_blank">Curso en línea<b> “Java Spring”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/css.png" target="_blank">Curso en línea<b> “Master en CSS Responsive, SASS, Flexbox, Grid y Bootstrap”</b>.</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Curso en línea<b> “Master de desarrollo Android con java y kotlin”</b>.</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Curso en línea<b> “ASP .Net Core con Angular”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/java.png" target="_blank">Curso<b> “Java básico”</b> impartido por el Centro de Investigación en Computación del Instituto Politécnico Nacional.</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Curso de<b> “Redes Aplicadas a la Informática”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/diseñouiux.png" target="_blank">Curso en línea<b> “Fundamentos de Diseño de Interfaces UI y UX”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/prototiposmoviles.png" target="_blank">Curso en línea<b> “Diseño de prototipos Móviles”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/desingthinking.png" target="_blank">Curso en línea<b> “Desing Thinking”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/arquitecturainformacion.png" target="_blank">Curso en línea<b> “Arquitectura de la información con Usaria”</b>.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Diseño & Animacion -->
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Diseño & Animacion</div>
+            <div class="subtitle" data-swiper-parallax="-200"></div>
+            <div class="text" data-swiper-parallax="-100">
+              <ul>
+                <li>
+                  <a href="/assets/images/diplomas/ilustrator.png" target="_blank">Curso en línea<b> “Illustrator”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/photoshop.png" target="_blank">Curso en línea<b> “Photoshop”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/animacionExpress.png" target="_blank">Curso en línea<b> “Animación exprés para redes sociales con After Effects”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/cinema4d.png" target="_blank">Curso en línea<b> “Introducción al 3D con Cinema 4D”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/fundamentosdediseño.png" target="_blank">Curso en línea<b> “Fundamentos del Diseño”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/sketch.png" target="_blank">Curso en línea<b> “sketch”</b>.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Forense -->
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Forense</div>
+            <div class="subtitle" data-swiper-parallax="-200"></div>
+            <div class="text" data-swiper-parallax="-100">
+              <ul>
+                <li>
+                  <a href="/assets/images/diplomas/cibercriminalidad.png" target="_blank">Curso en línea<b> “Cibercriminalidad e Informática Forense”</b> impartido por el Instituto Nacional de Ciencias Penales.</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Curso en línea<b> “Curso Básico de Ciberseguridad”</b> Impartido por la Policía Federal.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/congresocibercrimen.png" target="_blank">Congreso Internacional de Cibercriminalidad<b> “Tratamiento de Evidencia Digital”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/protecciondedatos.png" target="_blank">Curso en línea<b> “Ley General de Protección de Datos Personales en Posesión de Sujetos obligados”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/transparencia.png" target="_blank">Curso en línea<b> “Ley de General de Transparencia y Acceso a la Información Pública”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/nuevoSistemaPenal.png" target="_blank">Curso en línea<b> “Inducción al nuevo Sistema de Justicia Penal en México”</b>.</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Curso en línea<b> “Identificación de Moneda Falsa en México”</b>.</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Curso en línea<b> “Breve Historia de la procuración de justicia en México”</b>.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Dessarrollo personal -->
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Desarrollo personal</div>
+            <div class="subtitle" data-swiper-parallax="-200"></div>
+            <div class="text" data-swiper-parallax="-100">
+              <ul>
+                <li>
+                  <a href="/assets/images/diplomas/negocioOnline.png" target="_blank">Curso en línea<b> “Negocio Online”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/comunicacionacertiva.png" target="_blank">Curso en línea<b> “Comunicación asertiva”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/inteligenciaemocional.png" target="_blank">Curso en línea<b> “Inteligencia emocional”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/aprenderenlinea.png" target="_blank">Curso en linea<b> “Estrategias para el aprendizaje en linea”</b>.</a>
+                </li>
+                <li>
+                  <a href="/assets/images/diplomas/sep.png" target="_blank">Ponente en el Segundo Encuentro entre docentes<b> “Intercambio de estrategias innovadoras de la educación a distancia”</b>.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
       </div>
     </div>
   </div>
+  <!-- Swiper JS -->
+  <a class="font-2 home-subheader">Habilidades</a>
+</div>
+</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie_svg.min.js"></script>  
-  <script src="/assets/scripts/loti.js"></script>
+<div class="footer">
+  <div class="container grid">
+    <div class="col-12">
+        &copy; Miguel Angel
+        <a href="#">Aviso legal</a>
+      <a href="/contacto/">Contacto</a>
+    </div>
+  </div>
+</div>
+<!-- Scroll y menu -->
+<script src="/assets/scripts/nav.js"></script>
+<script src="/assets/scripts/basicScroll.min.js"></script>
+<script src="/assets/scripts/basicScrollStart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-  <script src="/assets/scripts/animaciones.js"></script>
-  
-  <script src="/assets/scripts/nav.js"></script>
-  <script src="/assets/scripts/basicScroll.min.js"></script>
-  <script src="/assets/scripts/basicScrollStart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  </body>
+<!-- animacion lottie -->
+
+
+<!-- animacion scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Slide swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<!-- personalizadas -->
+<script src="/assets/scripts/animaciones.js"></script>
+<script src="/assets/scripts/test.js"></script>
+
+
+
+</body>
 </html>
 
