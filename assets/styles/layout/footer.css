@@ -14,3 +14,8 @@
 .footer a:hover {
   color: var(--link-hover);
 }
+
+.footer img{
+  width: 25px;
+  height: 25px;
+}
