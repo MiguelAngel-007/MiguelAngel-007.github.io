@@ -22,6 +22,11 @@
   z-index: var(--z-index-logo);
 }
 
+.header-logo:hover{
+  filter:invert(100%);
+  color: var(--link-hover);
+}
+
 img.header-logo-inverso {
   display: none;
 }

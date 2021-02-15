@@ -8,6 +8,12 @@
 
 .quien-soy-content {
   margin-top: 20vh;
+  line-height: 2;
+}
+
+.quien-soy-content h1 {
+  font-size: 30px;
+  line-height: 1;
 }
 
 .quien-soy-foto {
