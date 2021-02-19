@@ -19,7 +19,7 @@
 @keyframes star {
   0% {
     opacity: 0;
-    transform: scale(1.5) translateY(-0.75em);
+    transform: scale(1.4) translateY(-0.75em);
   }
 
   20% {
@@ -40,7 +40,7 @@
 @keyframes wars {
   0% {
     opacity: 0;
-    transform: scale(1.5) translateY(0.5em);
+    transform: scale(1.4) translateY(0.5em);
   }
 
   20% {
@@ -106,7 +106,7 @@ body {
 .starwars-demo {
   height: 27em;
   left: 50%;
-  position: absolute;
+  position:absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 40em;
@@ -117,13 +117,13 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 90%;
 }
 
 .star,
 .wars,
 .byline {
-  position: absolute;
+  position:absolute;
 }
 
 .star {
